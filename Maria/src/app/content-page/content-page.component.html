@@ -1,0 +1,15 @@
+<h2>Our Pets</h2>
+<div class="container">
+    <div class="row row-cols-3 g-5">
+        <div class="col col-lg-4" *ngFor="let pet of pets; index as i">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5 class="card-title"><a routerLink="pets/{{i}}">{{pet.type}}</a></h5>
+                    <p class="card-text" *ngIf="pet.description">
+                        Description: {{pet.description}}</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

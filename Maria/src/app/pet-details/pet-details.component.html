@@ -1,0 +1,15 @@
+<h2> Pet Details</h2>
+<div class="container">
+    <div class="row row-cols-3 g-5">
+        <div class="col col-lg-4" *ngIf="pet1">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h2 class="card-title">{{ pet1.type }}</h2>
+                    <h3>Size: {{ pet1.size }}</h3>
+                    <p> {{ pet1.description }}</p>
+                    <button class="btn btn-primary" (click)="addToCart()">Pet me</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
